@@ -1,13 +1,13 @@
 body{
-  background-color: lightgray;
+  background-color: #444;
+  position: relative;
 }
 h1{
   text-align: center;
-  background: darkgray;
-  margin-left: 20vh;
-  margin-right: 20vh;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 45px;
   opacity: 0.8;
-  font-size: 50px;
 }
 p{
   text-align: center;
@@ -17,7 +17,82 @@ p{
   font-size: 20px;
 }
 img{
-  height: 40vh;
-  width: 30vh;
-  float: left;
+  border-radius: 100%;
+}
+header{
+  background: #555;
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-flow: column;
+}
+.menu{
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background: rgba(255,255,255,0.1);
+  top: 0;
+  text-align: center;
+
+}
+.menu__list{
+
+  display: inline-flex;
+}
+.conteiner1{
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  flex-wrap: wrap;
+  margin-bottom: 5%;
+}
+.conteiner2{
+  background: #555;
+  display: flex;
+  flex-flow: column;
+  justify-content: center; /*Центрирование по горизонтали*/
+  margin-bottom: 5%;
+}
+.photo{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    border-radius: 100%;
+}
+.photo_box{
+  display: flex;
+  justify-content: center;
+}
+.photo_box_item{
+  display: flex;
+  justify-content: center; /*Центрирование по горизонтали*/
+  flex-wrap: wrap;
+  list-style-type:none;
+  margin-right: 30px;
+  text-decoration:none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.photo_box_item_img{
+  width: 240px;
+  height: 240px;
+}
+.photo_me{
+  width: 480px;
+  height: 480px;
+}
+.menu__list_item{
+  list-style-type:none;
+  margin-right: 55px;
+  text-decoration:none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.menu__list_item_link{
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
+.main_title{
+  display: inline;
+  margin-bottom:   5%;
 }
