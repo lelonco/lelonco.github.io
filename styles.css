@@ -11,14 +11,13 @@ h1{
 }
 p{
   text-align: center;
-  margin-left: 10vh;
-  margin-right: 10vh;
-  margin-top: 10vh;
-  font-size: 20px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: #fff;
+  font-size: 35px;
+  opacity: 0.6;
 }
-img{
-  border-radius: 100%;
-}
+
 header{
   background: #555;
   width: 100%;
@@ -26,26 +25,30 @@ header{
   display: flex;
   flex-flow: column;
 }
+.main{
+}
 .menu{
   width: 100%;
   position: fixed;
-  z-index: 100;
   background: rgba(255,255,255,0.1);
   top: 0;
   text-align: center;
-
 }
 .menu__list{
 
   display: inline-flex;
 }
 .conteiner1{
+  height: 100vh;
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 5%;
+  align-items: center;
 }
 .conteiner2{
+  margin: auto;
+  height: 100vh;
   background: #555;
   display: flex;
   flex-flow: column;
@@ -65,7 +68,8 @@ header{
 .photo_box_item{
   display: flex;
   justify-content: center; /*Центрирование по горизонтали*/
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   list-style-type:none;
   margin-right: 30px;
   text-decoration:none;
@@ -75,10 +79,26 @@ header{
 .photo_box_item_img{
   width: 240px;
   height: 240px;
+  border-radius: 100%;
+  margin-bottom: 5%;
 }
 .photo_me{
   width: 480px;
   height: 480px;
+  border-radius: 100%;
+}
+.inst_photo_box{
+  display: flex;
+  flex-direction:column;
+}
+.inst_photo_box_list{
+  display:inline;
+}
+.inst_photo_box_img{
+  margin-right: 10px;
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
 }
 .menu__list_item{
   list-style-type:none;
