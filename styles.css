@@ -29,7 +29,6 @@ p{
 header{
   background: #555;
   width: 100%;
-  margin-top: 10%;
   display: flex;
   flex-flow: column;
 }
@@ -39,10 +38,10 @@ display: block;
 .menu{
   width: 100%;
   z-index: 1;
-  position: fixed;
-  background: #555;
+  background: rgba(255,255,255,0.3);
   top: 0;
   text-align: center;
+  opacity: 0.8;
 }
 .icon{
   display: none;
