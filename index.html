@@ -95,9 +95,9 @@
         $(Anchor(false));
       if(window.matchMedia("(max-width: 415px)").matches==0){
         $(".inst_photo_box_img").click(function(){
-          if(($(this).height()!=400)&&($(this).width()!=400)){
-          $(this).css({'z-index':'0'});  
-          $(this).animate({'width':'400','height':'400'},'fast');}
+          if(($(this).height()!=360)&&($(this).width()!=360)){
+          $(this).css({'z-index':'0'});
+          $(this).animate({'width':'360','height':'360'},'fast');}
           else{
             $(this).css({'z-index':'1','position':'relative'});
             $(this).animate({'width':'500','height':'500'},'fast');}
