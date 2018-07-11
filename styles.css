@@ -1,4 +1,7 @@
 body {
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 2880px;
   background-color: #060a0a;
   position: relative;
 }
@@ -23,7 +26,7 @@ a {
 
 p {
   z-index: 1;
-  text-align: center;
+  text-align:center;
   margin-top: 5%;
   margin-bottom: 5%;
   color: #fff;
@@ -194,6 +197,7 @@ img{
 }
 
 .photo_me {
+  padding:5%;
   width: 480px;
   height: 480px;
   border-radius: 100%;
@@ -246,7 +250,7 @@ img{
   vertical-align: middle;
 }
 
-@media screen and (max-width:415px) {
+@media screen and (max-width:766px) {
   h1 {
     text-align: center;
     text-transform: uppercase;
@@ -309,53 +313,253 @@ img{
     width: 100vh;
   }
 }
-
-/* @media screen and (max-width:375px){
-
-  .main{
-    display: block;
-    margin: 0 auto;
-  }
-  .photo_box{
-    display:block;
-
-  }
-  .photo_me{
-    width: 320px;
-    height: 320px;
+@media screen and (min-width:767px) and (max-width:1024px){
+  .photo_me {
+    width: 360px;
+    height: 360px;
+    margin-top: 80px;
     border-radius: 100%;
   }
-  .conteiner1{
-    width: 100vh;
-    margin: 0 auto;
-    margin-top: 200px;
-    margin-bottom: 200px;
+  p {
+    z-index: 1;
+    text-align:center;
+    margin-top: 5%;
+    margin-bottom: 100px;
+    color: #fff;
+    font-size: 25px;
+    opacity: 0.8;
   }
-  .conteiner2{
-    width: 100vh;
-    padding-top: 50  %;
-    background: #555;
-    margin: 0 auto;
+  .photo_box_item {
+    margin-right: 0;
+    width: 100%
   }
-  .inst_photo_box_img{
-    width: 320px;
-    height: 320px;
-    border-radius: 10px;
-  }
-  .inst_photo_box{
-    display: block;
-    width: 30%;
+
+  .photo_box_item_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    }
+  .inst_photo_box {
+    z-index: 1;
+    display: inline-block;
+    width: 50%;
     text-align: center;
     margin-bottom: 1%;
   }
-  .inst_photo_box_list{
-    display:block;
-    margin: 0 auto;
+}
+/* #### Mobile Phones Landscape #### */
+  @media screen and (min-width: 569px) and (max-width: 850px) and (orientation: landscape){
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 35px;
+      opacity: 0.9;
+    }
+    p {
+      text-align: center;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      color: #fff;
+      font-size: 25px;
+      opacity: 0.8;
+    }
+    header {
+      margin-bottom: 200px;
+      height: 100vh;
+      overflow: visible;
+    }
+    .mainhead{
+      justify-content:space-around;
+      width: 100vw;
+    }
+    .menu{
+      width: 100vw;
+    }
+    .background-image{
+      width: 100vw;
+    }
+    .photo_me{
+      margin-top: 0;
+    }
+    .photo_box {
+      display: flex;
+    }
+
+    .conteiner1 {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      /*Центрирование по горизонтали*/
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: auto;
+    }
+    .conteiner2 {
+      margin: 0 auto;
+      height: 100vh;
+      min-height: 100vh;
+      width: 100%;
+      background: #03050f;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      /*Центрирование по горизонтали*/
+      align-items: center;
+      margin-bottom: 5%;
+    }
+    .photo_box_item {
+      margin-right: 0;
+      width: 100%
+    }
+
+    .photo_box_item_img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      }
+    .inst_photo_box {
+      z-index: 1;
+      display: inline-block;
+      width: 50%;
+      text-align: center;
+      margin-bottom: 1%;
+    }
+    .conteiner1__background-image {
+      width: 100vw;
+    }
+    .conteiner2__background-image {
+      width: 100vw;
+    }
+}
+@media screen and (max-width: 568px) and (orientation: landscape){
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    opacity: 0.9;
   }
-  .photo_box_item_img{
-    width: 150px;
-    height:150px;
-    border-radius: 100%;
+  p {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.8;
+  }
+  header {
+    margin-bottom: 200px;
+    height: 100vh;
+    overflow: visible;
+  }
+  .mainhead{
+    justify-content:space-around;
+    width: 100vw;
+  }
+  .menu{
+    width: 100vw;
+  }
+  .background-image{
+    width: 100vw;
+  }
+  .photo_me{
+    margin-top: 0;
+  }
+  .photo_box {
+    display: flex;
+  }
+
+  .conteiner1 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /*Центрирование по горизонтали*/
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: auto;
+  }
+  .conteiner2 {
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    background: #03050f;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /*Центрирование по горизонтали*/
+    align-items: center;
     margin-bottom: 5%;
   }
-} */
+  .photo_box_item {
+    margin-right: 0;
+    width: 100%
+  }
+
+  .photo_box_item_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    }
+  .inst_photo_box {
+    z-index: 1;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+  .inst_photo_box_img{
+    width: 250px;
+    height: 250px;
+  }
+  .conteiner1__background-image {
+    width: 100vw;
+  }
+  .conteiner2__background-image {
+    width: 100vw;
+  }
+}
+@media screen and (min-width:2880px)  {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 55px;
+    opacity: 0.9;
+    margin-bottom: 100px;
+  }
+  p {
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    opacity: 0.8;
+  }
+  header{
+    margin: 0;
+  }
+  .mainhead{
+    height: 100vh;
+    margin: 0;
+  }
+  .photo_box{
+    margin-top: 100px;
+  }
+  .photo_box_item_img {
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    padding: 10%;
+    }
+    .inst_photo_box_list{
+      margin-top: 100px;
+    }
+    .inst_photo_box_img{
+      width: 550px;
+      height: 550px;
+    }
+}
