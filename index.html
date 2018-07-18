@@ -39,29 +39,31 @@
     </header>
     <div id="education" class="conteiner1">
       <div class="conteiner1__background-image"></div>
-      <div class="main_title">
-        <h1>освіта</h1>
-      </div>
-      <ul class="photo_box">
-        <a href="https://chmnu.edu.ua/">
-          <li class="photo_box_item">
-            <p>ЧНУ ім. Петра Могили</p> <img class="photo_box_item_img" src="./images/chnu.jpg" alt="">
-          </li>
-        </a>
-        <a href="https://www.facebook.com/groups/1751510471824132/">
-          <li class="photo_box_item">
-            <p>Факультет Комп'ютерних наух</p><img class="photo_box_item_img" src="./images/fkn.jpg" alt="">
-          </li>
-        </a>
-        <a href="https://www.instagram.com/cebsnu/">
-          <li class="photo_box_item">
-            <p>Комп'ютерна інженерія</p><img class="photo_box_item_img" src="./images/sepc.png" alt="">
-          </li>
-        </a>
-      </ul>
+      <div class="blur"></div>
+        <div class="main_title">
+            <h1>освіта</h1>
+        </div>
+          <ul class="photo_box">
+            <a href="https://chmnu.edu.ua/">
+              <li class="photo_box_item">
+                <p>ЧНУ ім. Петра Могили</p> <img class="photo_box_item_img" src="./images/chnu.jpg" alt="">
+              </li>
+            </a>
+            <a href="https://www.facebook.com/groups/1751510471824132/">
+              <li class="photo_box_item">
+                <p>Факультет Комп'ютерних наух</p><img class="photo_box_item_img" src="./images/fkn.jpg" alt="">
+              </li>
+            </a>
+            <a href="https://www.instagram.com/cebsnu/">
+              <li class="photo_box_item">
+                <p>Комп'ютерна інженерія</p><img class="photo_box_item_img" src="./images/sepc.png" alt="">
+              </li>
+            </a>
+          </ul>
     </div>
     <div id="skills" class="conteiner2">
       <div class="conteiner2__background-image"></div>
+      <div class="blur2"></div>
       <div class="main_title">
         <h1>Навички</h1>
       </div>
@@ -107,6 +109,16 @@
         </div>
       </div>
     </div>
+    <form class="contact" action="" method="">
+      <fildset class="contact__fildset">
+        <legend class="contact__legend"><h1>Зв'язатись зі мною</h1></legend>
+        <p class="contact__text"><label class="contact__label" for="name">Name</label><input class="contact__input" type="text" id="name"/></p>
+        <p class="contact__text"><label class="contact__label" for="email">E-mail</label> <input  class="contact__input" type="text" id="email"/></p>
+        <p class="contact__text"><label class="contact__label" for="comment">Comment</label> <input class="contact__input"  type="text" id="comment"/></p>
+        <p class="contact__text"><label class="contact__label" for="file">Attachment</label> <input class="contact__input"  type="file" id="file"/></p>
+        <input type="submit" class="submit contact__fildset contact__submit"  value="SUBMIT"/>
+      </fildset>
+    </form>
   </div>
   <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="simplebox_util.js"></script>
@@ -150,6 +162,7 @@
     }
     $(Anchor(false));
   </script>
+  <script src="./script.js" charset="utf-8"></script>
 </body>
 
 </html>
